@@ -2,8 +2,8 @@ name: Update FUBO Price
 
 on:
   schedule:
-    - cron: '0 21 * * *'  # 毎日06:00 JST に実行
-  workflow_dispatch:       # 手動実行も可能
+    - cron: '0 21 * * *'   # 毎日06:00 JST に実行
+  workflow_dispatch:        # 手動実行も可能
 
 jobs:
   update:
@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
 
       - name: Fetch FUBO price from Finnhub
         run: |
@@ -27,10 +30,10 @@ jobs:
           }
           EOF
 
-      - name: Commit and push
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add prices/fubo.json
-          git commit -m "Update FUBO price"
+          git commit -m "Update FUBO price: $PRICE"
           git push
