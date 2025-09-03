@@ -1,0 +1,36 @@
+name: Update FUBO Price
+
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 毎日06:00 JST に実行
+  workflow_dispatch:       # 手動実行も可能
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Fetch FUBO price from Finnhub
+        run: |
+          PRICE=$(curl -s "https://finnhub.io/api/v1/quote?symbol=FUBO&token=${{ secrets.FINNHUB_API_KEY }}" | jq '.c')
+          PREV=$(curl -s "https://finnhub.io/api/v1/quote?symbol=FUBO&token=${{ secrets.FINNHUB_API_KEY }}" | jq '.pc')
+          NOW=$(date -u +"%Y-%m-%d %H:%M UTC")
+          mkdir -p prices
+          cat > prices/fubo.json <<EOF
+          {
+            "symbol": "FUBO",
+            "price": $PRICE,
+            "prevClose": $PREV,
+            "updated": "$NOW"
+          }
+          EOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prices/fubo.json
+          git commit -m "Update FUBO price"
+          git push
