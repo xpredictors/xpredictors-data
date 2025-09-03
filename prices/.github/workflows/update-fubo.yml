@@ -1,8 +1,11 @@
 name: Update FUBO Price
 
+permissions:
+  contents: write   # ← コミット/プッシュに必要
+
 on:
   schedule:
-    - cron: '0 21 * * *'   # 毎日06:00 JST に実行
+    - cron: '0 21 * * *'   # 毎日 06:00 JST に実行
   workflow_dispatch:        # 手動実行も可能
 
 jobs:
@@ -10,15 +13,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install jq
-        run: sudo apt-get install -y jq
+        run: sudo apt-get update && sudo apt-get install -y jq
 
       - name: Fetch FUBO price from Finnhub
+        id: fetch
+        shell: bash
         run: |
-          PRICE=$(curl -s "https://finnhub.io/api/v1/quote?symbol=FUBO&token=${{ secrets.FINNHUB_API_KEY }}" | jq '.c')
-          PREV=$(curl -s "https://finnhub.io/api/v1/quote?symbol=FUBO&token=${{ secrets.FINNHUB_API_KEY }}" | jq '.pc')
+          set -euo pipefail
+          QUOTE_JSON=$(curl -fsSL "https://finnhub.io/api/v1/quote?symbol=FUBO&token=${{ secrets.FINNHUB_API_KEY }}")
+          echo "QUOTE_JSON=$QUOTE_JSON" >> $GITHUB_OUTPUT
+
+          PRICE=$(echo "$QUOTE_JSON" | jq -r '.c')
+          PREV=$(echo "$QUOTE_JSON" | jq -r '.pc')
+
+          # 取れなかった場合は失敗させる（null/0 のケースも弾く）
+          if [[ -z "$PRICE" || "$PRICE" == "null" || "$PRICE" == "0" ]]; then
+            echo "Failed to fetch PRICE from Finnhub. Response: $QUOTE_JSON"
+            exit 1
+          fi
+          if [[ -z "$PREV" || "$PREV" == "null" ]]; then
+            PREV="$PRICE"
+          fi
+
           NOW=$(date -u +"%Y-%m-%d %H:%M UTC")
           mkdir -p prices
           cat > prices/fubo.json <<EOF
@@ -31,9 +50,19 @@ jobs:
           EOF
 
       - name: Commit and push changes
+        shell: bash
         run: |
-          git config user.name "github-actions[bot]"
+          set -e
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 変更が無ければスキップ
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
           git add prices/fubo.json
-          git commit -m "Update FUBO price: $PRICE"
+          git commit -m "Update FUBO price: $(jq -r '.price' prices/fubo.json)"
+          git pull --rebase
           git push
