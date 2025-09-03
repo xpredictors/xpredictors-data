@@ -2,7 +2,7 @@ name: Update FUBO Price
 
 permissions:
   contents: write   # ← コミット/プッシュに必要
-
+  
 on:
   schedule:
     - cron: '0 21 * * *'   # 毎日 06:00 JST に実行
