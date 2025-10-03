@@ -1,68 +1,164 @@
-name: Update FUBO Price
-
+name: Update Stock Prices
 permissions:
-  contents: write   # ← コミット/プッシュに必要
-  
+  contents: write
+
 on:
   schedule:
-    - cron: '0 21 * * *'   # 毎日 06:00 JST に実行
-  workflow_dispatch:        # 手動実行も可能
+    - cron: '*/5 20-22 * * 1-5'  # 月-金 20:00-22:59 UTCを5分おきにチェック
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - name: Check if market just closed (16:30-16:40 ET)
+        id: check_time
+        run: |
+          ET_TIME=$(TZ='America/New_York' date +%H:%M)
+          ET_HOUR=$(TZ='America/New_York' date +%H)
+          ET_MIN=$(TZ='America/New_York' date +%M)
+          
+          echo "Current ET time: $ET_TIME"
+          
+          if [[ "$ET_HOUR" == "16" && "$ET_MIN" -ge 30 && "$ET_MIN" -lt 40 ]]; then
+            echo "proceed=true" >> $GITHUB_OUTPUT
+            echo "Market just closed. Proceeding with update."
+          else
+            echo "proceed=false" >> $GITHUB_OUTPUT
+            echo "Not in target window (16:30-16:40 ET). Skipping."
+          fi
+      
       - name: Checkout repository
+        if: steps.check_time.outputs.proceed == 'true'
         uses: actions/checkout@v4
-
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
-
-      - name: Fetch FUBO price from Finnhub
-        id: fetch
-        shell: bash
+      
+      - name: Set up Python
+        if: steps.check_time.outputs.proceed == 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        if: steps.check_time.outputs.proceed == 'true'
         run: |
-          set -euo pipefail
-          QUOTE_JSON=$(curl -fsSL "https://finnhub.io/api/v1/quote?symbol=FUBO&token=${{ secrets.FINNHUB_API_KEY }}")
-          echo "QUOTE_JSON=$QUOTE_JSON" >> $GITHUB_OUTPUT
-
-          PRICE=$(echo "$QUOTE_JSON" | jq -r '.c')
-          PREV=$(echo "$QUOTE_JSON" | jq -r '.pc')
-
-          # 取れなかった場合は失敗させる（null/0 のケースも弾く）
-          if [[ -z "$PRICE" || "$PRICE" == "null" || "$PRICE" == "0" ]]; then
-            echo "Failed to fetch PRICE from Finnhub. Response: $QUOTE_JSON"
-            exit 1
-          fi
-          if [[ -z "$PREV" || "$PREV" == "null" ]]; then
-            PREV="$PRICE"
-          fi
-
-          NOW=$(date -u +"%Y-%m-%d %H:%M UTC")
-          mkdir -p prices
-          cat > prices/fubo.json <<EOF
-          {
-            "symbol": "FUBO",
-            "price": $PRICE,
-            "prevClose": $PREV,
-            "updated": "$NOW"
-          }
+          pip install yfinance pandas
+      
+      - name: Fetch stock prices
+        if: steps.check_time.outputs.proceed == 'true'
+        run: |
+          python << 'EOF'
+          import yfinance as yf
+          import json
+          import os
+          from datetime import datetime
+          
+          symbols = [
+              "AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA", "AMD", 
+              "NFLX", "DIS", "PYPL", "SQ", "COIN", "SHOP", "UBER", "LYFT", 
+              "SNAP", "SPOT", "RBLX", "ROKU", "HOOD", "SOFI", "PLTR", "ABNB", 
+              "DASH", "SNOW", "NET", "DKNG", "PINS", "TWLO", "ZM", "DOCU", 
+              "CRM", "ORCL", "INTC", "IBM", "CSCO", "ADBE", "NOW", "INTU",
+              "TXN", "QCOM", "AVGO", "MU", "AMAT", "LRCX", "KLAC", "MRVL",
+              "ON", "ARM", "SMCI", "DELL", "HPE", "WDC", "STX", "PSTG",
+              "JPM", "BAC", "WFC", "GS", "MS", "C", "BLK", "SCHW", "AXP",
+              "V", "MA", "DFS", "COF", "SYF", "ALLY", "JNJ", "UNH", "PFE",
+              "ABBV", "TMO", "ABT", "DHR", "LLY", "MRK", "BMY", "AMGN",
+              "GILD", "VRTX", "BIIB", "REGN", "MRNA", "BNTX", "NVAX",
+              "XOM", "CVX", "COP", "SLB", "EOG", "PXD", "MPC", "VLO",
+              "PSX", "OXY", "HAL", "DVN", "FANG", "WMT", "COST", "HD",
+              "LOW", "TGT", "TJX", "ROST", "DG", "DLTR", "KR", "NKE",
+              "SBUX", "MCD", "CMG", "YUM", "QSR", "WEN", "JACK", "DPZ",
+              "BA", "LMT", "RTX", "GE", "CAT", "DE", "HON", "MMM",
+              "EMR", "ITW", "UPS", "FDX", "DAL", "UAL", "AAL", "LUV",
+              "JBLU", "SAVE", "CCL", "RCL", "NCLH", "MAR", "HLT", "H",
+              "F", "GM", "RIVN", "LCID", "NIO", "XPEV", "LI", "STLA",
+              "TM", "HMC", "PDD", "BABA", "JD", "BIDU", "TME", "BEKE",
+              "BILI", "IQ", "NTES", "T", "VZ", "TMUS", "CHTR", "CMCSA",
+              "PARA", "WBD", "FOX", "EA", "TTWO", "ATVI", "U", "Z",
+              "OPEN", "RDFN", "CSGP", "EXPE", "BKNG", "LULU", "CROX",
+              "DECK", "SKX", "UAA", "VFC", "FUBO", "DDOG", "CRWD", "ZS",
+              "OKTA", "PANW", "FTNT", "CYBR", "S", "MDB", "TEAM", "WDAY",
+              "VEEV", "ZI", "BILL", "AFRM", "UPST", "LC", "NU", "MELI",
+              "SE", "GRAB", "CPNG", "TOST", "CHWY", "ETSY", "W", "CVNA",
+              "KMX", "AN", "LAD", "ABG", "PAG", "GES", "GME", "AMC",
+              "BB", "BBBY", "KOSS", "EXPR", "NAKD", "SNDL", "CLOV",
+              "WISH", "WKHS", "RIDE", "SPCE", "SKLZ", "CLNE", "TLRY",
+              "CGC", "ACB", "SIRI", "PLUG", "FCEL", "BE", "QS", "NKLA",
+              "FSR", "GOEV", "WOOF", "BARK", "CPRI", "GPS", "BBWI",
+              "PTON", "BYND", "TTCF", "OUST", "LAZR", "VLDR", "LIDR",
+              "JMIA", "VIAC", "DISCA", "VIPS", "DIDI", "BGFV", "PRPL",
+              "CRSR", "APPS", "UWMC", "RKT", "CANO", "IONQ", "RGTI",
+              "QUBT", "ARQQ", "QMCO", "SPY", "QQQ", "IWM", "DIA",
+              "VTI", "VOO", "ARKK", "ARKG", "ARKW", "ARKF", "GLD",
+              "SLV", "USO", "UNG", "TLT", "HYG", "MSTR", "MARA",
+              "RIOT", "CLSK", "CIFR", "BITI", "SOXL", "TQQQ", "SQQQ",
+              "UVXY", "VXX"
+          ]
+          
+          os.makedirs('prices', exist_ok=True)
+          now = datetime.now().strftime("%Y-%m-%d %H:%M ET")
+          
+          success_count = 0
+          fail_count = 0
+          
+          for symbol in symbols:
+              try:
+                  ticker = yf.Ticker(symbol)
+                  data = ticker.history(period="2d")
+                  
+                  if data.empty or len(data) == 0:
+                      print(f"❌ {symbol}: No data")
+                      fail_count += 1
+                      continue
+                  
+                  price = float(data['Close'].iloc[-1])
+                  prev_close = float(data['Close'].iloc[-2]) if len(data) > 1 else price
+                  
+                  stock_data = {
+                      "symbol": symbol,
+                      "price": round(price, 2),
+                      "prevClose": round(prev_close, 2),
+                      "updated": now
+                  }
+                  
+                  with open(f'prices/{symbol}.json', 'w') as f:
+                      json.dump(stock_data, f, indent=2)
+                  
+                  print(f"✅ {symbol}: ${price:.2f}")
+                  success_count += 1
+                  
+              except Exception as e:
+                  print(f"❌ {symbol}: {str(e)}")
+                  fail_count += 1
+          
+          print(f"\nSuccess: {success_count} | Failed: {fail_count}")
+          
+          # all.jsonを作成
+          all_data = {"updated": now, "stocks": {}}
+          for symbol in symbols:
+              try:
+                  with open(f'prices/{symbol}.json', 'r') as f:
+                      all_data["stocks"][symbol] = json.load(f)
+              except:
+                  pass
+          
+          with open('prices/all.json', 'w') as f:
+              json.dump(all_data, f, indent=2)
           EOF
-
+      
       - name: Commit and push changes
-        shell: bash
+        if: steps.check_time.outputs.proceed == 'true'
         run: |
-          set -e
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # 変更が無ければスキップ
+          
           if git diff --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-
-          git add prices/fubo.json
-          git commit -m "Update FUBO price: $(jq -r '.price' prices/fubo.json)"
+          
+          ET_TIME=$(TZ='America/New_York' date +"%Y-%m-%d %H:%M ET")
+          git add prices/
+          git commit -m "Update stock prices - $ET_TIME"
           git pull --rebase
           git push
