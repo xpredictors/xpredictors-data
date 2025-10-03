@@ -110,7 +110,8 @@ jobs:
                       "updated": now_str
                   }
                   
-                  with open(f'prices/{symbol}.json', 'w') as f:
+                  # ★修正箇所1: .lower()を追加
+                  with open(f'prices/{symbol.lower()}.json', 'w') as f:
                       json.dump(stock_data, f, indent=2)
                   
                   print(f"✅ {symbol}: ${price:.2f}")
@@ -126,7 +127,8 @@ jobs:
           all_data = {"updated": now_str, "stocks": {}}
           for symbol in symbols:
               try:
-                  with open(f'prices/{symbol}.json', 'r') as f:
+                  # ★修正箇所2: .lower()を追加
+                  with open(f'prices/{symbol.lower()}.json', 'r') as f:
                       all_data["stocks"][symbol] = json.load(f)
               except:
                   pass
