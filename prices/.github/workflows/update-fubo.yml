@@ -37,11 +37,6 @@ jobs:
           now_et = datetime.now(et_tz)
           now_str = now_et.strftime("%Y-%m-%d %H:%M ET")
           
-          # 16:30-16:40 ETの範囲内かチェック
-          if not (now_et.hour == 16 and 30 <= now_et.minute < 40):
-              print(f"Current time {now_str} is outside target window (16:30-16:40 ET)")
-              exit(0)
-          
           symbols = [
               "AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA", "AMD", 
               "NFLX", "DIS", "PYPL", "SQ", "COIN", "SHOP", "UBER", "LYFT", 
@@ -90,6 +85,8 @@ jobs:
           success_count = 0
           fail_count = 0
           
+          print(f"Starting fetch at {now_str}")
+          
           for symbol in symbols:
               try:
                   ticker = yf.Ticker(symbol)
@@ -110,7 +107,6 @@ jobs:
                       "updated": now_str
                   }
                   
-                  # ★修正箇所1: .lower()を追加
                   with open(f'prices/{symbol.lower()}.json', 'w') as f:
                       json.dump(stock_data, f, indent=2)
                   
@@ -127,7 +123,6 @@ jobs:
           all_data = {"updated": now_str, "stocks": {}}
           for symbol in symbols:
               try:
-                  # ★修正箇所2: .lower()を追加
                   with open(f'prices/{symbol.lower()}.json', 'r') as f:
                       all_data["stocks"][symbol] = json.load(f)
               except:
@@ -135,6 +130,8 @@ jobs:
           
           with open('prices/all.json', 'w') as f:
               json.dump(all_data, f, indent=2)
+          
+          print(f"\nCreated all.json with {len(all_data['stocks'])} stocks")
           EOF
       
       - name: Commit and push changes
