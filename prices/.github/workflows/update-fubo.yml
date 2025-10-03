@@ -4,53 +4,43 @@ permissions:
 
 on:
   schedule:
-    - cron: '*/5 20-22 * * 1-5'  # 月-金 20:00-22:59 UTCを5分おきにチェック
+    - cron: '30-39 20 * * 1-5'  # 月-金 20:30-20:39 UTC (16:30-16:39 ET)
   workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Check if market just closed (16:30-16:40 ET)
-        id: check_time
-        run: |
-          ET_TIME=$(TZ='America/New_York' date +%H:%M)
-          ET_HOUR=$(TZ='America/New_York' date +%H)
-          ET_MIN=$(TZ='America/New_York' date +%M)
-          
-          echo "Current ET time: $ET_TIME"
-          
-          if [[ "$ET_HOUR" == "16" && "$ET_MIN" -ge 30 && "$ET_MIN" -lt 40 ]]; then
-            echo "proceed=true" >> $GITHUB_OUTPUT
-            echo "Market just closed. Proceeding with update."
-          else
-            echo "proceed=false" >> $GITHUB_OUTPUT
-            echo "Not in target window (16:30-16:40 ET). Skipping."
-          fi
-      
       - name: Checkout repository
-        if: steps.check_time.outputs.proceed == 'true'
         uses: actions/checkout@v4
       
       - name: Set up Python
-        if: steps.check_time.outputs.proceed == 'true'
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
       
       - name: Install dependencies
-        if: steps.check_time.outputs.proceed == 'true'
         run: |
-          pip install yfinance pandas
+          pip install yfinance pandas pytz
       
       - name: Fetch stock prices
-        if: steps.check_time.outputs.proceed == 'true'
         run: |
           python << 'EOF'
           import yfinance as yf
           import json
           import os
           from datetime import datetime
+          import pytz
+          
+          # 東部時間で現在時刻を取得
+          et_tz = pytz.timezone('America/New_York')
+          now_et = datetime.now(et_tz)
+          now_str = now_et.strftime("%Y-%m-%d %H:%M ET")
+          
+          # 16:30-16:40 ETの範囲内かチェック
+          if not (now_et.hour == 16 and 30 <= now_et.minute < 40):
+              print(f"Current time {now_str} is outside target window (16:30-16:40 ET)")
+              exit(0)
           
           symbols = [
               "AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA", "AMD", 
@@ -96,7 +86,6 @@ jobs:
           ]
           
           os.makedirs('prices', exist_ok=True)
-          now = datetime.now().strftime("%Y-%m-%d %H:%M ET")
           
           success_count = 0
           fail_count = 0
@@ -118,7 +107,7 @@ jobs:
                       "symbol": symbol,
                       "price": round(price, 2),
                       "prevClose": round(prev_close, 2),
-                      "updated": now
+                      "updated": now_str
                   }
                   
                   with open(f'prices/{symbol}.json', 'w') as f:
@@ -134,7 +123,7 @@ jobs:
           print(f"\nSuccess: {success_count} | Failed: {fail_count}")
           
           # all.jsonを作成
-          all_data = {"updated": now, "stocks": {}}
+          all_data = {"updated": now_str, "stocks": {}}
           for symbol in symbols:
               try:
                   with open(f'prices/{symbol}.json', 'r') as f:
@@ -147,7 +136,6 @@ jobs:
           EOF
       
       - name: Commit and push changes
-        if: steps.check_time.outputs.proceed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -157,8 +145,7 @@ jobs:
             exit 0
           fi
           
-          ET_TIME=$(TZ='America/New_York' date +"%Y-%m-%d %H:%M ET")
           git add prices/
-          git commit -m "Update stock prices - $ET_TIME"
+          git commit -m "Update stock prices - $(TZ='America/New_York' date +'%Y-%m-%d %H:%M ET')"
           git pull --rebase
           git push
