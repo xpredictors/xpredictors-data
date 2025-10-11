@@ -39,7 +39,7 @@ jobs:
           
           symbols = [
               "AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA", "AMD", 
-              "NFLX", "DIS", "PYPL", "SQ", "COIN", "SHOP", "UBER", "LYFT", 
+              "NFLX", "DIS", "PYPL", "XYZ", "COIN", "SHOP", "UBER", "LYFT", 
               "SNAP", "SPOT", "RBLX", "ROKU", "HOOD", "SOFI", "PLTR", "ABNB", 
               "DASH", "SNOW", "NET", "DKNG", "PINS", "TWLO", "ZM", "DOCU", 
               "CRM", "ORCL", "INTC", "IBM", "CSCO", "ADBE", "NOW", "INTU",
