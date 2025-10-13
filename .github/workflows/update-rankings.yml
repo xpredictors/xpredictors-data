@@ -1,0 +1,31 @@
+name: Update Rankings
+
+on:
+  schedule:
+    # 毎日 17:00 ET に実行（＝ 21:00 UTC）
+    - cron: '0 21 * * *'
+  workflow_dispatch:  # 手動でも実行可能
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install firebase-admin pytz
+
+      - name: Create Firebase credentials file
+        run: |
+          echo "${{ secrets.FIREBASE_KEY }}" > serviceAccount.json
+
+      - name: Run ranking update script
+        run: python .github/scripts/update_rankings.py
