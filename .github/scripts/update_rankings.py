@@ -9,7 +9,6 @@ from collections import defaultdict
 # === Firebase 初期化（GitHub Secrets 経由）===
 def initialize_firebase():
     try:
-        # GitHub Actions の Secrets から読み込み
         cred_json = os.environ.get("FIREBASE_SERVICE_ACCOUNT")
         if not cred_json:
             raise ValueError("❌ FIREBASE_SERVICE_ACCOUNT not found in environment variables.")
@@ -69,24 +68,24 @@ updated_users = 0
 for uid, s in stats.items():
     accuracy = s["correct"] / s["total"] if s["total"] > 0 else 0.0
 
-    # Firestoreに書き込むデータ
+    # 🔸 Functions版が管理するフィールドは触らない（rank, totalPredictions, correctPredictions, allTimeなど）
     ranking_data = {
-        "score": s["score"],
-        "totalVotes": s["total"],
-        "correctVotes": s["correct"],
-        "accuracy": round(accuracy, 3),
-        "lastUpdated": firestore.SERVER_TIMESTAMP,
+        "score": s["score"],               # ✅ Python専用フィールド
+        "totalVotes": s["total"],          # ✅ Python専用フィールド
+        "correctVotes": s["correct"],      # ✅ Python専用フィールド
+        "accuracy": round(accuracy, 3),    # 共通（上書きOK）
+        "lastUpdated": firestore.SERVER_TIMESTAMP,  # ✅ Python側バッチの更新時刻
     }
 
-    # 匿名ID（displayId）が users/{uid} にあれば追加
+    # 🔹 匿名ID（displayId）が users/{uid} にあれば追加
     user_doc = users_ref.document(uid).get()
     if user_doc.exists:
         user_data = user_doc.to_dict()
         display_id = user_data.get("displayId")
         if display_id:
-            ranking_data["displayId"] = display_id
+            ranking_data["displayId"] = display_id  # ✅ Python専用フィールド
 
-    # rankings/{uid} に反映
+    # 🔹 rankings/{uid} に反映（merge=Trueで安全）
     rankings_ref.document(uid).set(ranking_data, merge=True)
     updated_users += 1
 
