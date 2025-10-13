@@ -1,0 +1,150 @@
+name: Update Stock Prices
+permissions:
+  contents: write
+
+on:
+  schedule:
+    - cron: '30-39 20 * * 1-5'  # 月-金 20:30-20:39 UTC (16:30-16:39 ET)
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install yfinance pandas pytz
+      
+      - name: Fetch stock prices
+        run: |
+          python << 'EOF'
+          import yfinance as yf
+          import json
+          import os
+          from datetime import datetime
+          import pytz
+          
+          # 東部時間で現在時刻を取得
+          et_tz = pytz.timezone('America/New_York')
+          now_et = datetime.now(et_tz)
+          now_str = now_et.strftime("%Y-%m-%d %H:%M ET")
+          
+          symbols = [
+              "AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA", "AMD", 
+              "NFLX", "DIS", "PYPL", "XYZ", "COIN", "SHOP", "UBER", "LYFT", 
+              "SNAP", "SPOT", "RBLX", "ROKU", "HOOD", "SOFI", "PLTR", "ABNB", 
+              "DASH", "SNOW", "NET", "DKNG", "PINS", "TWLO", "ZM", "DOCU", 
+              "CRM", "ORCL", "INTC", "IBM", "CSCO", "ADBE", "NOW", "INTU",
+              "TXN", "QCOM", "AVGO", "MU", "AMAT", "LRCX", "KLAC", "MRVL",
+              "ON", "ARM", "SMCI", "DELL", "HPE", "WDC", "STX", "PSTG",
+              "JPM", "BAC", "WFC", "GS", "MS", "C", "BLK", "SCHW", "AXP",
+              "V", "MA", "DFS", "COF", "SYF", "ALLY", "JNJ", "UNH", "PFE",
+              "ABBV", "TMO", "ABT", "DHR", "LLY", "MRK", "BMY", "AMGN",
+              "GILD", "VRTX", "BIIB", "REGN", "MRNA", "BNTX", "NVAX",
+              "XOM", "CVX", "COP", "SLB", "EOG", "PXD", "MPC", "VLO",
+              "PSX", "OXY", "HAL", "DVN", "FANG", "WMT", "COST", "HD",
+              "LOW", "TGT", "TJX", "ROST", "DG", "DLTR", "KR", "NKE",
+              "SBUX", "MCD", "CMG", "YUM", "QSR", "WEN", "JACK", "DPZ",
+              "BA", "LMT", "RTX", "GE", "CAT", "DE", "HON", "MMM",
+              "EMR", "ITW", "UPS", "FDX", "DAL", "UAL", "AAL", "LUV",
+              "JBLU", "SAVE", "CCL", "RCL", "NCLH", "MAR", "HLT", "H",
+              "F", "GM", "RIVN", "LCID", "NIO", "XPEV", "LI", "STLA",
+              "TM", "HMC", "PDD", "BABA", "JD", "BIDU", "TME", "BEKE",
+              "BILI", "IQ", "NTES", "T", "VZ", "TMUS", "CHTR", "CMCSA",
+              "PARA", "WBD", "FOX", "EA", "TTWO", "ATVI", "U", "Z",
+              "OPEN", "RDFN", "CSGP", "EXPE", "BKNG", "LULU", "CROX",
+              "DECK", "SKX", "UAA", "VFC", "FUBO", "DDOG", "CRWD", "ZS",
+              "OKTA", "PANW", "FTNT", "CYBR", "S", "MDB", "TEAM", "WDAY",
+              "VEEV", "ZI", "BILL", "AFRM", "UPST", "LC", "NU", "MELI",
+              "SE", "GRAB", "CPNG", "TOST", "CHWY", "ETSY", "W", "CVNA",
+              "KMX", "AN", "LAD", "ABG", "PAG", "GES", "GME", "AMC",
+              "BB", "BBBY", "KOSS", "EXPR", "NAKD", "SNDL", "CLOV",
+              "WISH", "WKHS", "RIDE", "SPCE", "SKLZ", "CLNE", "TLRY",
+              "CGC", "ACB", "SIRI", "PLUG", "FCEL", "BE", "QS", "NKLA",
+              "FSR", "GOEV", "WOOF", "BARK", "CPRI", "GPS", "BBWI",
+              "PTON", "BYND", "TTCF", "OUST", "LAZR", "VLDR", "LIDR",
+              "JMIA", "VIAC", "DISCA", "VIPS", "DIDI", "BGFV", "PRPL",
+              "CRSR", "APPS", "UWMC", "RKT", "CANO", "IONQ", "RGTI",
+              "QUBT", "ARQQ", "QMCO", "SPY", "QQQ", "IWM", "DIA",
+              "VTI", "VOO", "ARKK", "ARKG", "ARKW", "ARKF", "GLD",
+              "SLV", "USO", "UNG", "TLT", "HYG", "MSTR", "MARA",
+              "RIOT", "CLSK", "CIFR", "BITI", "SOXL", "TQQQ", "SQQQ",
+              "UVXY", "VXX"
+          ]
+          
+          os.makedirs('prices', exist_ok=True)
+          
+          success_count = 0
+          fail_count = 0
+          
+          print(f"Starting fetch at {now_str}")
+          
+          for symbol in symbols:
+              try:
+                  ticker = yf.Ticker(symbol)
+                  data = ticker.history(period="2d")
+                  
+                  if data.empty or len(data) == 0:
+                      print(f"❌ {symbol}: No data")
+                      fail_count += 1
+                      continue
+                  
+                  price = float(data['Close'].iloc[-1])
+                  prev_close = float(data['Close'].iloc[-2]) if len(data) > 1 else price
+                  
+                  stock_data = {
+                      "symbol": symbol,
+                      "price": round(price, 2),
+                      "prevClose": round(prev_close, 2),
+                      "updated": now_str
+                  }
+                  
+                  with open(f'prices/{symbol.lower()}.json', 'w') as f:
+                      json.dump(stock_data, f, indent=2)
+                  
+                  print(f"✅ {symbol}: ${price:.2f}")
+                  success_count += 1
+                  
+              except Exception as e:
+                  print(f"❌ {symbol}: {str(e)}")
+                  fail_count += 1
+          
+          print(f"\nSuccess: {success_count} | Failed: {fail_count}")
+          
+          # all.jsonを作成
+          all_data = {"updated": now_str, "stocks": {}}
+          for symbol in symbols:
+              try:
+                  with open(f'prices/{symbol.lower()}.json', 'r') as f:
+                      all_data["stocks"][symbol] = json.load(f)
+              except:
+                  pass
+          
+          with open('prices/all.json', 'w') as f:
+              json.dump(all_data, f, indent=2)
+          
+          print(f"\nCreated all.json with {len(all_data['stocks'])} stocks")
+          EOF
+      
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          
+          git add prices/
+          git commit -m "Update stock prices - $(TZ='America/New_York' date +'%Y-%m-%d %H:%M ET')"
+          git pull --rebase
+          git push
