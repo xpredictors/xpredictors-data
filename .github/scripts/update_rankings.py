@@ -1,13 +1,30 @@
+import os
+import json
 import firebase_admin
 from firebase_admin import credentials, firestore
 from datetime import datetime
 import pytz
 from collections import defaultdict
 
-# === Firebase 初期化 ===
-cred = credentials.Certificate("serviceAccount.json")
-firebase_admin.initialize_app(cred)
-db = firestore.client()
+# === Firebase 初期化（GitHub Secrets 経由）===
+def initialize_firebase():
+    try:
+        # GitHub Actions の Secrets から読み込み
+        cred_json = os.environ.get("FIREBASE_SERVICE_ACCOUNT")
+        if not cred_json:
+            raise ValueError("❌ FIREBASE_SERVICE_ACCOUNT not found in environment variables.")
+
+        cred_dict = json.loads(cred_json)
+        cred = credentials.Certificate(cred_dict)
+        firebase_admin.initialize_app(cred)
+        print("✅ Firebase initialized successfully.")
+        return firestore.client()
+    except Exception as e:
+        print(f"❌ Firebase initialization failed: {e}")
+        raise e
+
+# Firestore接続
+db = initialize_firebase()
 
 # === タイムゾーン設定（米国東部時間）===
 ET = pytz.timezone("America/New_York")
@@ -24,9 +41,12 @@ users_ref = db.collection("users")
 stats = defaultdict(lambda: {"correct": 0, "total": 0, "score": 0})
 
 # === 1️⃣ predictions から全データを走査 ===
+print("📊 Fetching predictions...")
 predictions = predictions_ref.stream()
+count = 0
 
 for doc in predictions:
+    count += 1
     data = doc.to_dict()
     uid = data.get("uid")
     if not uid:
@@ -42,7 +62,10 @@ for doc in predictions:
         stats[uid]["correct"] += 1
         stats[uid]["score"] += 10  # 正解ごとに10pt加算
 
+print(f"✅ Processed {count} prediction records.")
+
 # === 2️⃣ 集計結果を rankings に書き込み ===
+updated_users = 0
 for uid, s in stats.items():
     accuracy = s["correct"] / s["total"] if s["total"] > 0 else 0.0
 
@@ -65,5 +88,6 @@ for uid, s in stats.items():
 
     # rankings/{uid} に反映
     rankings_ref.document(uid).set(ranking_data, merge=True)
+    updated_users += 1
 
-print(f"✅ [Rankings] Updated {len(stats)} users successfully.")
+print(f"✅ [Rankings] Updated {updated_users} users successfully.")
