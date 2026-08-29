@@ -1,335 +1,335 @@
 {
-  "updated": "2026-08-28 00:25 ET",
+  "updated": "2026-08-28 22:53 ET",
   "stocks": {
     "AAPL": {
       "symbol": "AAPL",
-      "price": 314.58,
-      "prevClose": 313.45,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 319.7,
+      "prevClose": 314.58,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MSFT": {
       "symbol": "MSFT",
-      "price": 505.06,
-      "prevClose": 496.37,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 513.53,
+      "prevClose": 505.06,
+      "updated": "2026-08-28 22:53 ET"
     },
     "GOOGL": {
       "symbol": "GOOGL",
-      "price": 340.65,
-      "prevClose": 342.0,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 346.59,
+      "prevClose": 340.65,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AMZN": {
       "symbol": "AMZN",
-      "price": 256.26,
-      "prevClose": 260.28,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 266.43,
+      "prevClose": 256.26,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TSLA": {
       "symbol": "TSLA",
-      "price": 354.81,
-      "prevClose": 345.82,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 348.75,
+      "prevClose": 354.81,
+      "updated": "2026-08-28 22:53 ET"
     },
     "META": {
       "symbol": "META",
-      "price": 571.1,
-      "prevClose": 576.14,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 578.02,
+      "prevClose": 571.1,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NVDA": {
       "symbol": "NVDA",
-      "price": 227.98,
-      "prevClose": 209.66,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 217.55,
+      "prevClose": 227.98,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AMD": {
       "symbol": "AMD",
-      "price": 476.67,
-      "prevClose": 480.93,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 465.58,
+      "prevClose": 476.67,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NFLX": {
       "symbol": "NFLX",
-      "price": 79.84,
-      "prevClose": 81.46,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 81.72,
+      "prevClose": 79.84,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DIS": {
       "symbol": "DIS",
-      "price": 106.82,
-      "prevClose": 109.63,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 108.1,
+      "prevClose": 106.82,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PYPL": {
       "symbol": "PYPL",
-      "price": 61.47,
-      "prevClose": 61.81,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 53.66,
+      "prevClose": 61.47,
+      "updated": "2026-08-28 22:53 ET"
     },
     "XYZ": {
       "symbol": "XYZ",
-      "price": 84.85,
-      "prevClose": 83.1,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 83.57,
+      "prevClose": 84.85,
+      "updated": "2026-08-28 22:53 ET"
     },
     "COIN": {
       "symbol": "COIN",
-      "price": 190.72,
-      "prevClose": 181.78,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 178.64,
+      "prevClose": 190.72,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SHOP": {
       "symbol": "SHOP",
-      "price": 154.33,
-      "prevClose": 150.29,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 152.9,
+      "prevClose": 154.33,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UBER": {
       "symbol": "UBER",
-      "price": 76.95,
-      "prevClose": 78.49,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 78.82,
+      "prevClose": 76.95,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LYFT": {
       "symbol": "LYFT",
-      "price": 17.35,
-      "prevClose": 17.39,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 17.7,
+      "prevClose": 17.35,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SNAP": {
       "symbol": "SNAP",
-      "price": 5.33,
-      "prevClose": 5.42,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 5.43,
+      "prevClose": 5.33,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SPOT": {
       "symbol": "SPOT",
-      "price": 527.25,
-      "prevClose": 550.03,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 547.51,
+      "prevClose": 527.25,
+      "updated": "2026-08-28 22:53 ET"
     },
     "RBLX": {
       "symbol": "RBLX",
-      "price": 38.15,
-      "prevClose": 37.56,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 38.53,
+      "prevClose": 38.15,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ROKU": {
       "symbol": "ROKU",
-      "price": 156.25,
-      "prevClose": 158.6,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 157.68,
+      "prevClose": 156.25,
+      "updated": "2026-08-28 22:53 ET"
     },
     "HOOD": {
       "symbol": "HOOD",
-      "price": 109.76,
-      "prevClose": 108.54,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 104.26,
+      "prevClose": 109.76,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SOFI": {
       "symbol": "SOFI",
-      "price": 19.18,
-      "prevClose": 18.84,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 18.06,
+      "prevClose": 19.18,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PLTR": {
       "symbol": "PLTR",
-      "price": 185.93,
-      "prevClose": 177.5,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 186.29,
+      "prevClose": 185.93,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ABNB": {
       "symbol": "ABNB",
-      "price": 184.4,
-      "prevClose": 188.07,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 189.43,
+      "prevClose": 184.4,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DASH": {
       "symbol": "DASH",
-      "price": 231.89,
-      "prevClose": 236.93,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 236.74,
+      "prevClose": 231.89,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SNOW": {
       "symbol": "SNOW",
-      "price": 329.11,
-      "prevClose": 315.37,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 328.0,
+      "prevClose": 329.11,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NET": {
       "symbol": "NET",
-      "price": 308.23,
-      "prevClose": 284.89,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 299.84,
+      "prevClose": 308.23,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DKNG": {
       "symbol": "DKNG",
-      "price": 24.22,
-      "prevClose": 24.78,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 25.26,
+      "prevClose": 24.22,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PINS": {
       "symbol": "PINS",
-      "price": 22.88,
-      "prevClose": 23.31,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 23.19,
+      "prevClose": 22.88,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TWLO": {
       "symbol": "TWLO",
-      "price": 241.34,
-      "prevClose": 228.46,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 237.78,
+      "prevClose": 241.34,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ZM": {
       "symbol": "ZM",
-      "price": 100.27,
-      "prevClose": 93.83,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 98.43,
+      "prevClose": 100.27,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DOCU": {
       "symbol": "DOCU",
-      "price": 63.8,
-      "prevClose": 59.33,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 64.0,
+      "prevClose": 63.8,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CRM": {
       "symbol": "CRM",
-      "price": 252.05,
-      "prevClose": 205.62,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 256.0,
+      "prevClose": 252.05,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ORCL": {
       "symbol": "ORCL",
-      "price": 151.94,
-      "prevClose": 148.87,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 150.85,
+      "prevClose": 151.94,
+      "updated": "2026-08-28 22:53 ET"
     },
     "INTC": {
       "symbol": "INTC",
-      "price": 92.09,
-      "prevClose": 88.24,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 89.47,
+      "prevClose": 92.09,
+      "updated": "2026-08-28 22:53 ET"
     },
     "IBM": {
       "symbol": "IBM",
-      "price": 238.79,
-      "prevClose": 229.87,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 235.59,
+      "prevClose": 238.79,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CSCO": {
       "symbol": "CSCO",
-      "price": 112.15,
-      "prevClose": 112.36,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 109.93,
+      "prevClose": 112.15,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ADBE": {
       "symbol": "ADBE",
-      "price": 289.15,
-      "prevClose": 273.47,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 291.52,
+      "prevClose": 289.15,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NOW": {
       "symbol": "NOW",
-      "price": 138.43,
-      "prevClose": 125.8,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 144.71,
+      "prevClose": 138.43,
+      "updated": "2026-08-28 22:53 ET"
     },
     "INTU": {
       "symbol": "INTU",
-      "price": 348.0,
-      "prevClose": 345.88,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 358.06,
+      "prevClose": 348.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TXN": {
       "symbol": "TXN",
-      "price": 266.54,
-      "prevClose": 261.77,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 258.64,
+      "prevClose": 266.54,
+      "updated": "2026-08-28 22:53 ET"
     },
     "QCOM": {
       "symbol": "QCOM",
-      "price": 164.78,
-      "prevClose": 163.72,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 164.19,
+      "prevClose": 164.78,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AVGO": {
       "symbol": "AVGO",
-      "price": 371.54,
-      "prevClose": 355.59,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 368.79,
+      "prevClose": 371.54,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MU": {
       "symbol": "MU",
-      "price": 935.39,
-      "prevClose": 938.4,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 932.86,
+      "prevClose": 935.39,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AMAT": {
       "symbol": "AMAT",
-      "price": 482.36,
-      "prevClose": 479.76,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 461.67,
+      "prevClose": 482.36,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LRCX": {
       "symbol": "LRCX",
-      "price": 318.58,
-      "prevClose": 312.88,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 301.9,
+      "prevClose": 318.58,
+      "updated": "2026-08-28 22:53 ET"
     },
     "KLAC": {
       "symbol": "KLAC",
-      "price": 183.77,
-      "prevClose": 183.83,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 175.54,
+      "prevClose": 183.77,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MRVL": {
       "symbol": "MRVL",
-      "price": 241.45,
-      "prevClose": 245.11,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 216.62,
+      "prevClose": 241.45,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ON": {
       "symbol": "ON",
-      "price": 74.8,
-      "prevClose": 73.22,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 72.61,
+      "prevClose": 74.8,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ARM": {
       "symbol": "ARM",
-      "price": 255.21,
-      "prevClose": 251.06,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 239.05,
+      "prevClose": 255.21,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SMCI": {
       "symbol": "SMCI",
-      "price": 38.46,
-      "prevClose": 37.39,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 37.08,
+      "prevClose": 38.46,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DELL": {
       "symbol": "DELL",
-      "price": 472.26,
-      "prevClose": 463.82,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 456.24,
+      "prevClose": 472.26,
+      "updated": "2026-08-28 22:53 ET"
     },
     "HPE": {
       "symbol": "HPE",
-      "price": 54.41,
-      "prevClose": 55.23,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 52.31,
+      "prevClose": 54.41,
+      "updated": "2026-08-28 22:53 ET"
     },
     "WDC": {
       "symbol": "WDC",
-      "price": 462.0,
-      "prevClose": 468.88,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 459.45,
+      "prevClose": 462.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "STX": {
       "symbol": "STX",
-      "price": 847.2,
-      "prevClose": 846.37,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 829.76,
+      "prevClose": 847.2,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PSTG": {
       "symbol": "PSTG",
@@ -339,681 +339,681 @@
     },
     "JPM": {
       "symbol": "JPM",
-      "price": 354.22,
-      "prevClose": 356.5,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 357.62,
+      "prevClose": 354.22,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BAC": {
       "symbol": "BAC",
-      "price": 61.17,
-      "prevClose": 62.23,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 62.32,
+      "prevClose": 61.17,
+      "updated": "2026-08-28 22:53 ET"
     },
     "WFC": {
       "symbol": "WFC",
-      "price": 84.97,
-      "prevClose": 85.23,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 86.69,
+      "prevClose": 84.97,
+      "updated": "2026-08-28 22:53 ET"
     },
     "GS": {
       "symbol": "GS",
-      "price": 1040.87,
-      "prevClose": 1040.46,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1033.99,
+      "prevClose": 1040.87,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MS": {
       "symbol": "MS",
-      "price": 214.86,
-      "prevClose": 214.08,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 214.77,
+      "prevClose": 214.86,
+      "updated": "2026-08-28 22:53 ET"
     },
     "C": {
       "symbol": "C",
-      "price": 132.68,
-      "prevClose": 133.56,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 132.9,
+      "prevClose": 132.68,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BLK": {
       "symbol": "BLK",
-      "price": 1167.57,
-      "prevClose": 1173.21,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1164.48,
+      "prevClose": 1167.57,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SCHW": {
       "symbol": "SCHW",
-      "price": 108.05,
-      "prevClose": 109.39,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 110.16,
+      "prevClose": 108.05,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AXP": {
       "symbol": "AXP",
-      "price": 334.16,
-      "prevClose": 336.15,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 333.2,
+      "prevClose": 334.16,
+      "updated": "2026-08-28 22:53 ET"
     },
     "V": {
       "symbol": "V",
-      "price": 379.66,
-      "prevClose": 383.9,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 381.6,
+      "prevClose": 379.66,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MA": {
       "symbol": "MA",
-      "price": 591.73,
-      "prevClose": 598.47,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 595.3,
+      "prevClose": 591.73,
+      "updated": "2026-08-28 22:53 ET"
     },
     "COF": {
       "symbol": "COF",
-      "price": 216.67,
-      "prevClose": 217.21,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 215.67,
+      "prevClose": 216.67,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SYF": {
       "symbol": "SYF",
-      "price": 79.93,
-      "prevClose": 79.78,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 78.05,
+      "prevClose": 79.93,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ALLY": {
       "symbol": "ALLY",
-      "price": 42.74,
-      "prevClose": 42.54,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 42.18,
+      "prevClose": 42.74,
+      "updated": "2026-08-28 22:53 ET"
     },
     "JNJ": {
       "symbol": "JNJ",
-      "price": 265.77,
-      "prevClose": 270.0,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 268.04,
+      "prevClose": 265.77,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UNH": {
       "symbol": "UNH",
-      "price": 395.05,
-      "prevClose": 401.01,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 392.95,
+      "prevClose": 395.05,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PFE": {
       "symbol": "PFE",
-      "price": 28.02,
-      "prevClose": 28.3,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 27.96,
+      "prevClose": 28.02,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ABBV": {
       "symbol": "ABBV",
-      "price": 258.15,
-      "prevClose": 262.9,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 255.48,
+      "prevClose": 258.15,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TMO": {
       "symbol": "TMO",
-      "price": 630.7,
-      "prevClose": 633.71,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 622.18,
+      "prevClose": 630.7,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ABT": {
       "symbol": "ABT",
-      "price": 111.59,
-      "prevClose": 114.1,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 112.47,
+      "prevClose": 111.59,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DHR": {
       "symbol": "DHR",
-      "price": 215.68,
-      "prevClose": 215.36,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 216.07,
+      "prevClose": 215.68,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LLY": {
       "symbol": "LLY",
-      "price": 1176.1,
-      "prevClose": 1189.41,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1174.61,
+      "prevClose": 1176.1,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MRK": {
       "symbol": "MRK",
-      "price": 149.54,
-      "prevClose": 153.1,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 148.35,
+      "prevClose": 149.54,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BMY": {
       "symbol": "BMY",
-      "price": 66.95,
-      "prevClose": 67.57,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 66.58,
+      "prevClose": 66.95,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AMGN": {
       "symbol": "AMGN",
-      "price": 436.99,
-      "prevClose": 440.34,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 432.42,
+      "prevClose": 436.99,
+      "updated": "2026-08-28 22:53 ET"
     },
     "GILD": {
       "symbol": "GILD",
-      "price": 148.86,
-      "prevClose": 148.09,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 145.68,
+      "prevClose": 148.86,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VRTX": {
       "symbol": "VRTX",
-      "price": 547.55,
-      "prevClose": 547.29,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 541.69,
+      "prevClose": 547.55,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BIIB": {
       "symbol": "BIIB",
-      "price": 221.5,
-      "prevClose": 221.07,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 218.5,
+      "prevClose": 221.5,
+      "updated": "2026-08-28 22:53 ET"
     },
     "REGN": {
       "symbol": "REGN",
-      "price": 807.71,
-      "prevClose": 814.79,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 794.19,
+      "prevClose": 807.71,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MRNA": {
       "symbol": "MRNA",
-      "price": 142.77,
-      "prevClose": 149.66,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 137.99,
+      "prevClose": 142.77,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BNTX": {
       "symbol": "BNTX",
-      "price": 111.4,
-      "prevClose": 112.56,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 102.07,
+      "prevClose": 111.4,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NVAX": {
       "symbol": "NVAX",
-      "price": 9.05,
-      "prevClose": 9.21,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 9.26,
+      "prevClose": 9.05,
+      "updated": "2026-08-28 22:53 ET"
     },
     "XOM": {
       "symbol": "XOM",
-      "price": 156.44,
-      "prevClose": 158.19,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 156.71,
+      "prevClose": 156.44,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CVX": {
       "symbol": "CVX",
-      "price": 199.77,
-      "prevClose": 200.21,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 201.86,
+      "prevClose": 199.77,
+      "updated": "2026-08-28 22:53 ET"
     },
     "COP": {
       "symbol": "COP",
-      "price": 129.52,
-      "prevClose": 130.61,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 130.35,
+      "prevClose": 129.52,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SLB": {
       "symbol": "SLB",
-      "price": 55.01,
-      "prevClose": 53.6,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 57.33,
+      "prevClose": 55.01,
+      "updated": "2026-08-28 22:53 ET"
     },
     "EOG": {
       "symbol": "EOG",
-      "price": 144.5,
-      "prevClose": 144.84,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 143.35,
+      "prevClose": 144.5,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MPC": {
       "symbol": "MPC",
-      "price": 363.54,
-      "prevClose": 362.27,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 368.83,
+      "prevClose": 363.54,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VLO": {
       "symbol": "VLO",
-      "price": 346.59,
-      "prevClose": 348.03,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 352.36,
+      "prevClose": 346.59,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PSX": {
       "symbol": "PSX",
-      "price": 239.81,
-      "prevClose": 242.23,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 244.01,
+      "prevClose": 239.81,
+      "updated": "2026-08-28 22:53 ET"
     },
     "OXY": {
       "symbol": "OXY",
-      "price": 59.17,
-      "prevClose": 58.62,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 59.1,
+      "prevClose": 59.17,
+      "updated": "2026-08-28 22:53 ET"
     },
     "HAL": {
       "symbol": "HAL",
-      "price": 35.49,
-      "prevClose": 34.44,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 36.18,
+      "prevClose": 35.49,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DVN": {
       "symbol": "DVN",
-      "price": 47.12,
-      "prevClose": 46.83,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 47.35,
+      "prevClose": 47.12,
+      "updated": "2026-08-28 22:53 ET"
     },
     "FANG": {
       "symbol": "FANG",
-      "price": 200.52,
-      "prevClose": 199.84,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 197.67,
+      "prevClose": 200.52,
+      "updated": "2026-08-28 22:53 ET"
     },
     "WMT": {
       "symbol": "WMT",
-      "price": 102.63,
-      "prevClose": 104.34,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 103.09,
+      "prevClose": 102.63,
+      "updated": "2026-08-28 22:53 ET"
     },
     "COST": {
       "symbol": "COST",
-      "price": 934.66,
-      "prevClose": 956.12,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 945.47,
+      "prevClose": 934.66,
+      "updated": "2026-08-28 22:53 ET"
     },
     "HD": {
       "symbol": "HD",
-      "price": 328.61,
-      "prevClose": 334.85,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 330.19,
+      "prevClose": 328.61,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LOW": {
       "symbol": "LOW",
-      "price": 206.74,
-      "prevClose": 210.36,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 208.05,
+      "prevClose": 206.74,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TGT": {
       "symbol": "TGT",
-      "price": 165.93,
-      "prevClose": 164.04,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 163.18,
+      "prevClose": 165.93,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TJX": {
       "symbol": "TJX",
-      "price": 134.22,
-      "prevClose": 136.83,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 135.12,
+      "prevClose": 134.22,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ROST": {
       "symbol": "ROST",
-      "price": 229.87,
-      "prevClose": 236.27,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 228.55,
+      "prevClose": 229.87,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DG": {
       "symbol": "DG",
-      "price": 125.89,
-      "prevClose": 122.78,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 122.89,
+      "prevClose": 125.89,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DLTR": {
       "symbol": "DLTR",
-      "price": 127.0,
-      "prevClose": 132.18,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 128.26,
+      "prevClose": 127.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "KR": {
       "symbol": "KR",
-      "price": 56.93,
-      "prevClose": 58.51,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 57.72,
+      "prevClose": 56.93,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NKE": {
       "symbol": "NKE",
-      "price": 38.44,
-      "prevClose": 38.59,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 39.6,
+      "prevClose": 38.44,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SBUX": {
       "symbol": "SBUX",
-      "price": 107.26,
-      "prevClose": 108.49,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 107.85,
+      "prevClose": 107.26,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MCD": {
       "symbol": "MCD",
-      "price": 260.06,
-      "prevClose": 266.93,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 265.0,
+      "prevClose": 260.06,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CMG": {
       "symbol": "CMG",
-      "price": 37.22,
-      "prevClose": 37.34,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 38.03,
+      "prevClose": 37.22,
+      "updated": "2026-08-28 22:53 ET"
     },
     "YUM": {
       "symbol": "YUM",
-      "price": 150.75,
-      "prevClose": 154.41,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 153.86,
+      "prevClose": 150.75,
+      "updated": "2026-08-28 22:53 ET"
     },
     "QSR": {
       "symbol": "QSR",
-      "price": 78.07,
-      "prevClose": 79.26,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 78.26,
+      "prevClose": 78.07,
+      "updated": "2026-08-28 22:53 ET"
     },
     "WEN": {
       "symbol": "WEN",
-      "price": 7.82,
-      "prevClose": 9.04,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 8.27,
+      "prevClose": 7.82,
+      "updated": "2026-08-28 22:53 ET"
     },
     "JACK": {
       "symbol": "JACK",
-      "price": 15.9,
-      "prevClose": 16.47,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 16.19,
+      "prevClose": 15.9,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DPZ": {
       "symbol": "DPZ",
-      "price": 332.06,
-      "prevClose": 344.56,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 350.0,
+      "prevClose": 332.06,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BA": {
       "symbol": "BA",
-      "price": 209.89,
-      "prevClose": 212.09,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 209.82,
+      "prevClose": 209.89,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LMT": {
       "symbol": "LMT",
-      "price": 565.89,
-      "prevClose": 565.62,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 563.85,
+      "prevClose": 565.89,
+      "updated": "2026-08-28 22:53 ET"
     },
     "RTX": {
       "symbol": "RTX",
-      "price": 212.08,
-      "prevClose": 211.99,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 211.71,
+      "prevClose": 212.08,
+      "updated": "2026-08-28 22:53 ET"
     },
     "GE": {
       "symbol": "GE",
-      "price": 342.73,
-      "prevClose": 354.39,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 342.58,
+      "prevClose": 342.73,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CAT": {
       "symbol": "CAT",
-      "price": 817.0,
-      "prevClose": 821.93,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 800.25,
+      "prevClose": 817.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DE": {
       "symbol": "DE",
-      "price": 622.66,
-      "prevClose": 634.54,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 630.33,
+      "prevClose": 622.66,
+      "updated": "2026-08-28 22:53 ET"
     },
     "HON": {
       "symbol": "HON",
-      "price": 220.39,
-      "prevClose": 220.67,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 217.43,
+      "prevClose": 220.39,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MMM": {
       "symbol": "MMM",
-      "price": 178.83,
-      "prevClose": 180.0,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 174.34,
+      "prevClose": 178.83,
+      "updated": "2026-08-28 22:53 ET"
     },
     "EMR": {
       "symbol": "EMR",
-      "price": 157.71,
-      "prevClose": 158.29,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 155.18,
+      "prevClose": 157.71,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ITW": {
       "symbol": "ITW",
-      "price": 281.67,
-      "prevClose": 285.51,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 280.1,
+      "prevClose": 281.67,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UPS": {
       "symbol": "UPS",
-      "price": 105.68,
-      "prevClose": 105.65,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 105.33,
+      "prevClose": 105.68,
+      "updated": "2026-08-28 22:53 ET"
     },
     "FDX": {
       "symbol": "FDX",
-      "price": 331.41,
-      "prevClose": 335.99,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 330.88,
+      "prevClose": 331.41,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DAL": {
       "symbol": "DAL",
-      "price": 81.14,
-      "prevClose": 83.08,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 80.07,
+      "prevClose": 81.14,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UAL": {
       "symbol": "UAL",
-      "price": 112.39,
-      "prevClose": 114.83,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 110.6,
+      "prevClose": 112.39,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AAL": {
       "symbol": "AAL",
-      "price": 13.72,
-      "prevClose": 13.84,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 13.64,
+      "prevClose": 13.72,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LUV": {
       "symbol": "LUV",
-      "price": 39.76,
-      "prevClose": 40.67,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 39.64,
+      "prevClose": 39.76,
+      "updated": "2026-08-28 22:53 ET"
     },
     "JBLU": {
       "symbol": "JBLU",
-      "price": 4.89,
-      "prevClose": 4.99,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 4.8,
+      "prevClose": 4.89,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CCL": {
       "symbol": "CCL",
-      "price": 24.95,
-      "prevClose": 25.59,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 24.76,
+      "prevClose": 24.95,
+      "updated": "2026-08-28 22:53 ET"
     },
     "RCL": {
       "symbol": "RCL",
-      "price": 284.8,
-      "prevClose": 290.0,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 279.41,
+      "prevClose": 284.8,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NCLH": {
       "symbol": "NCLH",
       "price": 16.65,
-      "prevClose": 17.09,
-      "updated": "2026-08-28 00:25 ET"
+      "prevClose": 16.65,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MAR": {
       "symbol": "MAR",
-      "price": 353.87,
-      "prevClose": 358.67,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 351.08,
+      "prevClose": 353.87,
+      "updated": "2026-08-28 22:53 ET"
     },
     "HLT": {
       "symbol": "HLT",
-      "price": 325.68,
-      "prevClose": 332.56,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 321.85,
+      "prevClose": 325.68,
+      "updated": "2026-08-28 22:53 ET"
     },
     "H": {
       "symbol": "H",
-      "price": 173.28,
-      "prevClose": 177.42,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 172.25,
+      "prevClose": 173.28,
+      "updated": "2026-08-28 22:53 ET"
     },
     "F": {
       "symbol": "F",
-      "price": 13.95,
-      "prevClose": 13.9,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 13.88,
+      "prevClose": 13.95,
+      "updated": "2026-08-28 22:53 ET"
     },
     "GM": {
       "symbol": "GM",
-      "price": 86.18,
-      "prevClose": 86.33,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 86.27,
+      "prevClose": 86.18,
+      "updated": "2026-08-28 22:53 ET"
     },
     "RIVN": {
       "symbol": "RIVN",
-      "price": 16.8,
-      "prevClose": 16.33,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 16.07,
+      "prevClose": 16.8,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LCID": {
       "symbol": "LCID",
-      "price": 5.09,
-      "prevClose": 4.95,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 5.01,
+      "prevClose": 5.09,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NIO": {
       "symbol": "NIO",
-      "price": 4.36,
-      "prevClose": 4.37,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 4.37,
+      "prevClose": 4.36,
+      "updated": "2026-08-28 22:53 ET"
     },
     "XPEV": {
       "symbol": "XPEV",
-      "price": 11.33,
-      "prevClose": 11.71,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 11.53,
+      "prevClose": 11.33,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LI": {
       "symbol": "LI",
-      "price": 12.18,
-      "prevClose": 12.14,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 12.23,
+      "prevClose": 12.18,
+      "updated": "2026-08-28 22:53 ET"
     },
     "STLA": {
       "symbol": "STLA",
-      "price": 5.28,
-      "prevClose": 5.15,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 5.42,
+      "prevClose": 5.28,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TM": {
       "symbol": "TM",
-      "price": 192.0,
-      "prevClose": 191.84,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 194.48,
+      "prevClose": 192.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "HMC": {
       "symbol": "HMC",
-      "price": 31.33,
-      "prevClose": 31.41,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 31.86,
+      "prevClose": 31.33,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PDD": {
       "symbol": "PDD",
-      "price": 84.69,
-      "prevClose": 86.74,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 85.69,
+      "prevClose": 84.69,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BABA": {
       "symbol": "BABA",
-      "price": 116.31,
-      "prevClose": 119.83,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 118.9,
+      "prevClose": 116.31,
+      "updated": "2026-08-28 22:53 ET"
     },
     "JD": {
       "symbol": "JD",
-      "price": 28.49,
-      "prevClose": 28.77,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 28.74,
+      "prevClose": 28.49,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BIDU": {
       "symbol": "BIDU",
-      "price": 96.94,
-      "prevClose": 93.26,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 97.12,
+      "prevClose": 96.94,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TME": {
       "symbol": "TME",
-      "price": 8.66,
-      "prevClose": 8.8,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 8.56,
+      "prevClose": 8.66,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BEKE": {
       "symbol": "BEKE",
-      "price": 17.73,
-      "prevClose": 17.87,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 18.32,
+      "prevClose": 17.73,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BILI": {
       "symbol": "BILI",
-      "price": 16.76,
-      "prevClose": 16.15,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 16.6,
+      "prevClose": 16.76,
+      "updated": "2026-08-28 22:53 ET"
     },
     "IQ": {
       "symbol": "IQ",
       "price": 0.92,
-      "prevClose": 0.98,
-      "updated": "2026-08-28 00:25 ET"
+      "prevClose": 0.92,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NTES": {
       "symbol": "NTES",
-      "price": 122.69,
-      "prevClose": 123.43,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 122.76,
+      "prevClose": 122.69,
+      "updated": "2026-08-28 22:53 ET"
     },
     "T": {
       "symbol": "T",
-      "price": 25.43,
-      "prevClose": 25.87,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 26.01,
+      "prevClose": 25.43,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VZ": {
       "symbol": "VZ",
-      "price": 49.43,
-      "prevClose": 50.19,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 50.1,
+      "prevClose": 49.43,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TMUS": {
       "symbol": "TMUS",
-      "price": 177.75,
-      "prevClose": 179.61,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 181.37,
+      "prevClose": 177.75,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CHTR": {
       "symbol": "CHTR",
-      "price": 148.32,
-      "prevClose": 153.89,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 153.62,
+      "prevClose": 148.32,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CMCSA": {
       "symbol": "CMCSA",
-      "price": 26.41,
-      "prevClose": 27.2,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 27.06,
+      "prevClose": 26.41,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PARA": {
       "symbol": "PARA",
-      "price": 1.19,
-      "prevClose": 1.18,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1.09,
+      "prevClose": 1.19,
+      "updated": "2026-08-28 22:53 ET"
     },
     "WBD": {
       "symbol": "WBD",
-      "price": 28.88,
-      "prevClose": 28.75,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 28.77,
+      "prevClose": 28.88,
+      "updated": "2026-08-28 22:53 ET"
     },
     "FOX": {
       "symbol": "FOX",
-      "price": 60.4,
-      "prevClose": 62.23,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 61.32,
+      "prevClose": 60.4,
+      "updated": "2026-08-28 22:53 ET"
     },
     "EA": {
       "symbol": "EA",
@@ -1023,117 +1023,117 @@
     },
     "TTWO": {
       "symbol": "TTWO",
-      "price": 233.0,
-      "prevClose": 233.45,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 235.39,
+      "prevClose": 233.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "U": {
       "symbol": "U",
-      "price": 43.49,
-      "prevClose": 44.38,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 43.31,
+      "prevClose": 43.49,
+      "updated": "2026-08-28 22:53 ET"
     },
     "Z": {
       "symbol": "Z",
-      "price": 35.43,
-      "prevClose": 34.95,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 35.66,
+      "prevClose": 35.43,
+      "updated": "2026-08-28 22:53 ET"
     },
     "OPEN": {
       "symbol": "OPEN",
-      "price": 3.38,
-      "prevClose": 3.41,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 3.29,
+      "prevClose": 3.38,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CSGP": {
       "symbol": "CSGP",
-      "price": 31.34,
-      "prevClose": 32.14,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 32.22,
+      "prevClose": 31.34,
+      "updated": "2026-08-28 22:53 ET"
     },
     "EXPE": {
       "symbol": "EXPE",
-      "price": 318.92,
-      "prevClose": 332.96,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 329.44,
+      "prevClose": 318.92,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BKNG": {
       "symbol": "BKNG",
-      "price": 202.56,
-      "prevClose": 208.89,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 205.63,
+      "prevClose": 202.56,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LULU": {
       "symbol": "LULU",
-      "price": 115.0,
-      "prevClose": 116.35,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 120.81,
+      "prevClose": 115.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CROX": {
       "symbol": "CROX",
-      "price": 121.69,
-      "prevClose": 123.64,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 122.23,
+      "prevClose": 121.69,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DECK": {
       "symbol": "DECK",
-      "price": 86.33,
-      "prevClose": 89.47,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 87.76,
+      "prevClose": 86.33,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UAA": {
       "symbol": "UAA",
-      "price": 5.07,
-      "prevClose": 5.15,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 5.08,
+      "prevClose": 5.07,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VFC": {
       "symbol": "VFC",
-      "price": 13.64,
-      "prevClose": 13.89,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 13.67,
+      "prevClose": 13.64,
+      "updated": "2026-08-28 22:53 ET"
     },
     "FUBO": {
       "symbol": "FUBO",
-      "price": 10.1,
-      "prevClose": 10.3,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 10.3,
+      "prevClose": 10.1,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DDOG": {
       "symbol": "DDOG",
-      "price": 242.93,
-      "prevClose": 227.67,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 236.98,
+      "prevClose": 242.93,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CRWD": {
       "symbol": "CRWD",
-      "price": 227.96,
-      "prevClose": 189.18,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 218.4,
+      "prevClose": 227.96,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ZS": {
       "symbol": "ZS",
-      "price": 187.3,
-      "prevClose": 170.31,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 184.23,
+      "prevClose": 187.3,
+      "updated": "2026-08-28 22:53 ET"
     },
     "OKTA": {
       "symbol": "OKTA",
-      "price": 172.91,
-      "prevClose": 134.42,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 166.23,
+      "prevClose": 172.91,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PANW": {
       "symbol": "PANW",
-      "price": 382.85,
-      "prevClose": 339.31,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 371.59,
+      "prevClose": 382.85,
+      "updated": "2026-08-28 22:53 ET"
     },
     "FTNT": {
       "symbol": "FTNT",
-      "price": 172.78,
-      "prevClose": 157.54,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 166.0,
+      "prevClose": 172.78,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CYBR": {
       "symbol": "CYBR",
@@ -1143,51 +1143,51 @@
     },
     "S": {
       "symbol": "S",
-      "price": 22.71,
-      "prevClose": 20.51,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 21.54,
+      "prevClose": 22.71,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MDB": {
       "symbol": "MDB",
-      "price": 440.58,
-      "prevClose": 406.11,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 446.62,
+      "prevClose": 440.58,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TEAM": {
       "symbol": "TEAM",
-      "price": 185.62,
-      "prevClose": 168.47,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 190.41,
+      "prevClose": 185.62,
+      "updated": "2026-08-28 22:53 ET"
     },
     "WDAY": {
       "symbol": "WDAY",
-      "price": 193.57,
-      "prevClose": 190.75,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 204.72,
+      "prevClose": 193.57,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VEEV": {
       "symbol": "VEEV",
-      "price": 282.13,
-      "prevClose": 244.91,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 276.69,
+      "prevClose": 282.13,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BILL": {
       "symbol": "BILL",
-      "price": 48.87,
-      "prevClose": 48.11,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 50.31,
+      "prevClose": 48.87,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AFRM": {
       "symbol": "AFRM",
-      "price": 77.49,
-      "prevClose": 76.46,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 77.76,
+      "prevClose": 77.49,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UPST": {
       "symbol": "UPST",
-      "price": 30.46,
-      "prevClose": 30.47,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 29.08,
+      "prevClose": 30.46,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LC": {
       "symbol": "LC",
@@ -1197,93 +1197,93 @@
     },
     "NU": {
       "symbol": "NU",
-      "price": 14.88,
-      "prevClose": 15.17,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 14.3,
+      "prevClose": 14.88,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MELI": {
       "symbol": "MELI",
-      "price": 1930.75,
-      "prevClose": 1950.44,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1966.25,
+      "prevClose": 1930.75,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SE": {
       "symbol": "SE",
-      "price": 118.32,
-      "prevClose": 119.12,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 119.36,
+      "prevClose": 118.32,
+      "updated": "2026-08-28 22:53 ET"
     },
     "GRAB": {
       "symbol": "GRAB",
-      "price": 3.59,
-      "prevClose": 3.64,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 3.61,
+      "prevClose": 3.59,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CPNG": {
       "symbol": "CPNG",
-      "price": 16.23,
-      "prevClose": 16.53,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 16.52,
+      "prevClose": 16.23,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TOST": {
       "symbol": "TOST",
-      "price": 35.17,
-      "prevClose": 36.97,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 35.15,
+      "prevClose": 35.17,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CHWY": {
       "symbol": "CHWY",
-      "price": 22.8,
-      "prevClose": 22.97,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 23.26,
+      "prevClose": 22.8,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ETSY": {
       "symbol": "ETSY",
-      "price": 82.94,
-      "prevClose": 81.74,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 83.59,
+      "prevClose": 82.94,
+      "updated": "2026-08-28 22:53 ET"
     },
     "W": {
       "symbol": "W",
-      "price": 105.01,
-      "prevClose": 104.0,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 103.76,
+      "prevClose": 105.01,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CVNA": {
       "symbol": "CVNA",
-      "price": 74.09,
-      "prevClose": 73.95,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 74.04,
+      "prevClose": 74.09,
+      "updated": "2026-08-28 22:53 ET"
     },
     "KMX": {
       "symbol": "KMX",
-      "price": 62.64,
-      "prevClose": 63.84,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 62.11,
+      "prevClose": 62.64,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AN": {
       "symbol": "AN",
-      "price": 198.75,
-      "prevClose": 196.57,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 200.09,
+      "prevClose": 198.75,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LAD": {
       "symbol": "LAD",
-      "price": 371.04,
-      "prevClose": 370.15,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 370.36,
+      "prevClose": 371.04,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ABG": {
       "symbol": "ABG",
-      "price": 210.67,
-      "prevClose": 209.89,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 211.62,
+      "prevClose": 210.67,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PAG": {
       "symbol": "PAG",
-      "price": 217.85,
-      "prevClose": 217.24,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 217.01,
+      "prevClose": 217.85,
+      "updated": "2026-08-28 22:53 ET"
     },
     "GES": {
       "symbol": "GES",
@@ -1293,57 +1293,57 @@
     },
     "GME": {
       "symbol": "GME",
-      "price": 18.25,
-      "prevClose": 17.97,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 17.87,
+      "prevClose": 18.25,
+      "updated": "2026-08-28 22:53 ET"
     },
     "AMC": {
       "symbol": "AMC",
-      "price": 2.7,
-      "prevClose": 2.61,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 2.59,
+      "prevClose": 2.7,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BB": {
       "symbol": "BB",
-      "price": 8.65,
-      "prevClose": 7.79,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 8.16,
+      "prevClose": 8.65,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BBBY": {
       "symbol": "BBBY",
       "price": 3.94,
-      "prevClose": 4.01,
-      "updated": "2026-08-28 00:25 ET"
+      "prevClose": 3.94,
+      "updated": "2026-08-28 22:53 ET"
     },
     "KOSS": {
       "symbol": "KOSS",
-      "price": 3.42,
-      "prevClose": 3.44,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 3.5,
+      "prevClose": 3.42,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SNDL": {
       "symbol": "SNDL",
-      "price": 1.35,
-      "prevClose": 1.38,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1.36,
+      "prevClose": 1.35,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CLOV": {
       "symbol": "CLOV",
       "price": 4.23,
-      "prevClose": 4.25,
-      "updated": "2026-08-28 00:25 ET"
+      "prevClose": 4.23,
+      "updated": "2026-08-28 22:53 ET"
     },
     "WKHS": {
       "symbol": "WKHS",
-      "price": 3.17,
-      "prevClose": 3.02,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 3.07,
+      "prevClose": 3.17,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SPCE": {
       "symbol": "SPCE",
-      "price": 3.0,
-      "prevClose": 2.89,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 2.94,
+      "prevClose": 3.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SKLZ": {
       "symbol": "SKLZ",
@@ -1353,57 +1353,57 @@
     },
     "CLNE": {
       "symbol": "CLNE",
-      "price": 1.6,
-      "prevClose": 1.62,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1.63,
+      "prevClose": 1.6,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TLRY": {
       "symbol": "TLRY",
-      "price": 4.57,
-      "prevClose": 4.64,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 4.59,
+      "prevClose": 4.57,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CGC": {
       "symbol": "CGC",
-      "price": 1.01,
-      "prevClose": 1.03,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1.0,
+      "prevClose": 1.01,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ACB": {
       "symbol": "ACB",
       "price": 4.01,
-      "prevClose": 4.0,
-      "updated": "2026-08-28 00:25 ET"
+      "prevClose": 4.01,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SIRI": {
       "symbol": "SIRI",
-      "price": 28.5,
-      "prevClose": 28.51,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 28.54,
+      "prevClose": 28.5,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PLUG": {
       "symbol": "PLUG",
-      "price": 2.27,
-      "prevClose": 2.17,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 2.19,
+      "prevClose": 2.27,
+      "updated": "2026-08-28 22:53 ET"
     },
     "FCEL": {
       "symbol": "FCEL",
-      "price": 19.32,
-      "prevClose": 19.07,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 17.76,
+      "prevClose": 19.32,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BE": {
       "symbol": "BE",
-      "price": 217.83,
-      "prevClose": 218.21,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 210.77,
+      "prevClose": 217.83,
+      "updated": "2026-08-28 22:53 ET"
     },
     "QS": {
       "symbol": "QS",
-      "price": 5.9,
-      "prevClose": 5.74,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 5.61,
+      "prevClose": 5.9,
+      "updated": "2026-08-28 22:53 ET"
     },
     "NKLA": {
       "symbol": "NKLA",
@@ -1419,69 +1419,69 @@
     },
     "WOOF": {
       "symbol": "WOOF",
-      "price": 2.71,
-      "prevClose": 2.77,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 2.7,
+      "prevClose": 2.71,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BARK": {
       "symbol": "BARK",
-      "price": 10.85,
-      "prevClose": 10.54,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 10.92,
+      "prevClose": 10.85,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CPRI": {
       "symbol": "CPRI",
-      "price": 13.18,
-      "prevClose": 13.6,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 13.5,
+      "prevClose": 13.18,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BBWI": {
       "symbol": "BBWI",
-      "price": 18.65,
-      "prevClose": 18.9,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 19.22,
+      "prevClose": 18.65,
+      "updated": "2026-08-28 22:53 ET"
     },
     "PTON": {
       "symbol": "PTON",
-      "price": 5.3,
-      "prevClose": 5.36,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 5.45,
+      "prevClose": 5.3,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BYND": {
       "symbol": "BYND",
-      "price": 14.0,
-      "prevClose": 14.25,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 13.86,
+      "prevClose": 14.0,
+      "updated": "2026-08-28 22:53 ET"
     },
     "OUST": {
       "symbol": "OUST",
-      "price": 36.54,
-      "prevClose": 35.87,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 34.62,
+      "prevClose": 36.54,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LAZR": {
       "symbol": "LAZR",
-      "price": 44.96,
-      "prevClose": 44.15,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 42.08,
+      "prevClose": 44.96,
+      "updated": "2026-08-28 22:53 ET"
     },
     "LIDR": {
       "symbol": "LIDR",
-      "price": 1.2,
-      "prevClose": 1.18,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1.15,
+      "prevClose": 1.2,
+      "updated": "2026-08-28 22:53 ET"
     },
     "JMIA": {
       "symbol": "JMIA",
-      "price": 7.07,
-      "prevClose": 6.83,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 6.94,
+      "prevClose": 7.07,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VIPS": {
       "symbol": "VIPS",
-      "price": 13.47,
-      "prevClose": 14.08,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 13.5,
+      "prevClose": 13.47,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BGFV": {
       "symbol": "BGFV",
@@ -1491,225 +1491,225 @@
     },
     "PRPL": {
       "symbol": "PRPL",
-      "price": 4.49,
-      "prevClose": 4.72,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 4.28,
+      "prevClose": 4.49,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CRSR": {
       "symbol": "CRSR",
-      "price": 11.98,
-      "prevClose": 11.84,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 12.0,
+      "prevClose": 11.98,
+      "updated": "2026-08-28 22:53 ET"
     },
     "APPS": {
       "symbol": "APPS",
-      "price": 11.44,
-      "prevClose": 10.84,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 11.09,
+      "prevClose": 11.44,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UWMC": {
       "symbol": "UWMC",
-      "price": 1.48,
-      "prevClose": 1.46,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 1.49,
+      "prevClose": 1.48,
+      "updated": "2026-08-28 22:53 ET"
     },
     "RKT": {
       "symbol": "RKT",
-      "price": 14.24,
-      "prevClose": 13.9,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 13.77,
+      "prevClose": 14.24,
+      "updated": "2026-08-28 22:53 ET"
     },
     "IONQ": {
       "symbol": "IONQ",
-      "price": 42.46,
-      "prevClose": 40.03,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 39.2,
+      "prevClose": 42.46,
+      "updated": "2026-08-28 22:53 ET"
     },
     "RGTI": {
       "symbol": "RGTI",
-      "price": 16.44,
-      "prevClose": 15.94,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 15.59,
+      "prevClose": 16.44,
+      "updated": "2026-08-28 22:53 ET"
     },
     "QUBT": {
       "symbol": "QUBT",
-      "price": 8.65,
-      "prevClose": 8.35,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 8.15,
+      "prevClose": 8.65,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ARQQ": {
       "symbol": "ARQQ",
-      "price": 21.46,
-      "prevClose": 20.36,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 20.04,
+      "prevClose": 21.46,
+      "updated": "2026-08-28 22:53 ET"
     },
     "QMCO": {
       "symbol": "QMCO",
-      "price": 23.56,
-      "prevClose": 23.21,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 22.26,
+      "prevClose": 23.56,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SPY": {
       "symbol": "SPY",
-      "price": 771.1,
-      "prevClose": 766.08,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 769.35,
+      "prevClose": 771.1,
+      "updated": "2026-08-28 22:53 ET"
     },
     "QQQ": {
       "symbol": "QQQ",
-      "price": 721.11,
-      "prevClose": 711.37,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 716.43,
+      "prevClose": 721.11,
+      "updated": "2026-08-28 22:53 ET"
     },
     "IWM": {
       "symbol": "IWM",
-      "price": 299.81,
-      "prevClose": 298.93,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 295.75,
+      "prevClose": 299.81,
+      "updated": "2026-08-28 22:53 ET"
     },
     "DIA": {
       "symbol": "DIA",
-      "price": 535.22,
-      "prevClose": 534.23,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 535.06,
+      "prevClose": 535.22,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VTI": {
       "symbol": "VTI",
-      "price": 380.63,
-      "prevClose": 378.23,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 379.36,
+      "prevClose": 380.63,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VOO": {
       "symbol": "VOO",
-      "price": 708.75,
-      "prevClose": 704.2,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 707.24,
+      "prevClose": 708.75,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ARKK": {
       "symbol": "ARKK",
-      "price": 87.38,
-      "prevClose": 85.78,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 84.59,
+      "prevClose": 87.38,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ARKG": {
       "symbol": "ARKG",
-      "price": 49.87,
-      "prevClose": 49.45,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 47.64,
+      "prevClose": 49.87,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ARKW": {
       "symbol": "ARKW",
-      "price": 158.5,
-      "prevClose": 155.02,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 155.19,
+      "prevClose": 158.5,
+      "updated": "2026-08-28 22:53 ET"
     },
     "ARKF": {
       "symbol": "ARKF",
-      "price": 47.03,
-      "prevClose": 46.2,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 46.1,
+      "prevClose": 47.03,
+      "updated": "2026-08-28 22:53 ET"
     },
     "GLD": {
       "symbol": "GLD",
-      "price": 422.6,
-      "prevClose": 421.32,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 408.89,
+      "prevClose": 422.6,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SLV": {
       "symbol": "SLV",
-      "price": 62.77,
-      "prevClose": 61.59,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 60.02,
+      "prevClose": 62.77,
+      "updated": "2026-08-28 22:53 ET"
     },
     "USO": {
       "symbol": "USO",
-      "price": 130.01,
-      "prevClose": 127.35,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 129.7,
+      "prevClose": 130.01,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UNG": {
       "symbol": "UNG",
-      "price": 10.43,
-      "prevClose": 10.41,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 10.33,
+      "prevClose": 10.43,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TLT": {
       "symbol": "TLT",
-      "price": 83.13,
-      "prevClose": 83.3,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 82.88,
+      "prevClose": 83.13,
+      "updated": "2026-08-28 22:53 ET"
     },
     "HYG": {
       "symbol": "HYG",
-      "price": 79.87,
-      "prevClose": 79.9,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 79.74,
+      "prevClose": 79.87,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MSTR": {
       "symbol": "MSTR",
-      "price": 137.4,
-      "prevClose": 123.19,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 127.31,
+      "prevClose": 137.4,
+      "updated": "2026-08-28 22:53 ET"
     },
     "MARA": {
       "symbol": "MARA",
-      "price": 11.87,
-      "prevClose": 11.22,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 10.67,
+      "prevClose": 11.87,
+      "updated": "2026-08-28 22:53 ET"
     },
     "RIOT": {
       "symbol": "RIOT",
-      "price": 20.88,
-      "prevClose": 20.61,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 18.99,
+      "prevClose": 20.88,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CLSK": {
       "symbol": "CLSK",
-      "price": 12.95,
-      "prevClose": 12.18,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 11.66,
+      "prevClose": 12.95,
+      "updated": "2026-08-28 22:53 ET"
     },
     "CIFR": {
       "symbol": "CIFR",
-      "price": 16.77,
-      "prevClose": 16.02,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 15.17,
+      "prevClose": 16.77,
+      "updated": "2026-08-28 22:53 ET"
     },
     "BITI": {
       "symbol": "BITI",
-      "price": 19.01,
-      "prevClose": 19.32,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 19.56,
+      "prevClose": 19.01,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SOXL": {
       "symbol": "SOXL",
-      "price": 123.05,
-      "prevClose": 116.6,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 111.34,
+      "prevClose": 123.05,
+      "updated": "2026-08-28 22:53 ET"
     },
     "TQQQ": {
       "symbol": "TQQQ",
-      "price": 73.3,
-      "prevClose": 70.47,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 71.85,
+      "prevClose": 73.3,
+      "updated": "2026-08-28 22:53 ET"
     },
     "SQQQ": {
       "symbol": "SQQQ",
-      "price": 37.78,
-      "prevClose": 39.38,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 38.54,
+      "prevClose": 37.78,
+      "updated": "2026-08-28 22:53 ET"
     },
     "UVXY": {
       "symbol": "UVXY",
-      "price": 18.15,
-      "prevClose": 18.79,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 18.45,
+      "prevClose": 18.15,
+      "updated": "2026-08-28 22:53 ET"
     },
     "VXX": {
       "symbol": "VXX",
-      "price": 18.1,
-      "prevClose": 18.54,
-      "updated": "2026-08-28 00:25 ET"
+      "price": 18.36,
+      "prevClose": 18.1,
+      "updated": "2026-08-28 22:53 ET"
     }
   }
 }
